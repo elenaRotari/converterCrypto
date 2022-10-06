@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Crypto-Rate</h1>
+      <label for="crypto" class="label1">
+        Crypto-currency
+        <select name="crypto" id="crypto" placeholder="choose" class="crypto">
+          <option value="btc">BTC</option>
+          <option value="eos">EOS</option>
+
+          <option value="ltc">LTC</option>
+        </select>
+      </label>
+      <input type="number" class="multiply" min="1" value="1" />
+
+      <label for="crypto" class="label2">
+        Currency
+        <select name="crypto" id="crypto" placeholder="choose" class="currency">
+          <option value="eur">EUR</option>
+          <option value="usd">USD</option>
+          <option value="mdl">MDL</option>
+          <option value="ron">RON</option>
+        </select>
+      </label>
+      <input type="text" readonly class="showAmount" />
+      <button type="submit" class="btnConvert">Convert</button>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
